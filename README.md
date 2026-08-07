@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=azmil-fikri&hide_border=true&background=0d1117&ring=00F7FF&fire=FF2E9F&currStreakLabel=00F7FF" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=azmil-fikri&hide_border=true&background=0d1117&ring=00F7FF&fire=FF2E9F&currStreakLabel=00F7FF&currStreakNum=c9d1d9&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e" />
 </p>
 
 <h3 align="center">🐍 Contribution Snake</h3>
