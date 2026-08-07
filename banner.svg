@@ -1,0 +1,46 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F7FF">
+        <animate attributeName="stop-color" values="#00F7FF;#FF2E9F;#00F7FF" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FF2E9F">
+        <animate attributeName="stop-color" values="#FF2E9F;#00F7FF;#FF2E9F" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur result="blur">
+        <animate attributeName="stdDeviation" values="1.5;4;1.5" dur="2.5s" repeatCount="indefinite"/>
+      </feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="typeClip">
+      <rect x="0" y="0" height="30" width="0">
+        <animate attributeName="width" from="0" to="560" begin="0.3s" dur="2.2s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="220" rx="18" fill="#0d1117" stroke="url(#textGrad)" stroke-width="1.5" opacity="0.9"/>
+
+  <!-- floating code particles -->
+  <g font-family="monospace" font-size="20" fill="#30363d">
+    <text x="60" y="200">&lt;/&gt;<animate attributeName="y" values="200;20;200" dur="6s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="6s" begin="0s" repeatCount="indefinite"/></text>
+    <text x="820" y="210">{ }<animate attributeName="y" values="210;30;210" dur="7s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="7s" begin="1.5s" repeatCount="indefinite"/></text>
+    <text x="140" y="215">#!<animate attributeName="y" values="215;40;215" dur="5.5s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0" dur="5.5s" begin="3s" repeatCount="indefinite"/></text>
+    <text x="760" y="195">01<animate attributeName="y" values="195;25;195" dur="8s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0" dur="8s" begin="2s" repeatCount="indefinite"/></text>
+  </g>
+
+  <text x="450" y="95" text-anchor="middle" font-family="'Courier New', monospace" font-weight="bold" font-size="46" fill="url(#textGrad)" filter="url(#glow)">AZMIL FIKRI</text>
+
+  <g clip-path="url(#typeClip)">
+    <text x="170" y="145" font-family="monospace" font-size="20" fill="#c9d1d9">Web &amp; Mobile Developer  •  AR/AI Enthusiast</text>
+  </g>
+  <rect x="170" y="127" width="3" height="22" fill="#00F7FF">
+    <animate attributeName="x" from="170" to="730" begin="0.3s" dur="2.2s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="2.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
