@@ -17,11 +17,6 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <clipPath id="typeClip">
-      <rect x="0" y="0" height="30" width="0">
-        <animate attributeName="width" from="0" to="560" begin="0.3s" dur="2.2s" fill="freeze"/>
-      </rect>
-    </clipPath>
   </defs>
 
   <rect width="900" height="220" rx="18" fill="#0d1117" stroke="url(#textGrad)" stroke-width="1.5" opacity="0.9"/>
@@ -36,11 +31,12 @@
 
   <text x="450" y="95" text-anchor="middle" font-family="'Courier New', monospace" font-weight="bold" font-size="46" fill="url(#textGrad)" filter="url(#glow)">AZMIL FIKRI</text>
 
-  <g clip-path="url(#typeClip)">
-    <text x="170" y="145" font-family="monospace" font-size="20" fill="#c9d1d9">Web &amp; Mobile Developer  •  AR/AI Enthusiast</text>
-  </g>
-  <rect x="170" y="127" width="3" height="22" fill="#00F7FF">
-    <animate attributeName="x" from="170" to="730" begin="0.3s" dur="2.2s" fill="freeze"/>
-    <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="2.5s" repeatCount="indefinite"/>
+  <text x="450" y="145" text-anchor="middle" font-family="monospace" font-size="20" fill="#c9d1d9" opacity="0">
+    Web &amp; Mobile Developer  •  AR/AI Enthusiast
+    <animate attributeName="opacity" from="0" to="1" begin="0.3s" dur="1.2s" fill="freeze"/>
+  </text>
+
+  <rect x="702" y="127" width="3" height="22" fill="#00F7FF" opacity="0">
+    <animate attributeName="opacity" values="1;0;1" begin="1.5s" dur="0.8s" repeatCount="indefinite"/>
   </rect>
 </svg>
